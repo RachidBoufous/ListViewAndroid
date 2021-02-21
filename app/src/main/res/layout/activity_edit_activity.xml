@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_activity">
+
+    <ImageView
+        android:id="@+id/img_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/product_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Product title"
+        android:textAlignment="center"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_id"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Product price"
+        android:textAlignment="center"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_title"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageButton
+        android:id="@+id/save_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/cancel_btn"
+        app:layout_constraintTop_toBottomOf="@id/product_price"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/accept"
+        android:background="?android:attr/selectableItemBackground"
+        />
+
+    <ImageButton
+        android:id="@+id/cancel_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/save_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_price"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/cancel"
+        android:background="?android:attr/selectableItemBackground"
+
+        />
+
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:src="@drawable/delete"
+        android:tooltipText="delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

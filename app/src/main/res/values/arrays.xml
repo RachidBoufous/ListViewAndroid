@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="intitules">
+        <item>BattleNet</item>
+        <item>Discord</item>
+        <item>Medium</item>
+        <item>Reddit</item>
+        <item>Spotify</item>
+        <item>Steam</item>
+        <item>Twitch</item>
+        <item>Visual studio</item>
+    </string-array>
+    <string-array name="price">
+        <item>50</item>
+        <item>5</item>
+        <item>0</item>
+        <item>0</item>
+        <item>9.99</item>
+        <item>50</item>
+        <item>0</item>
+        <item>20</item>
+    </string-array>
+    <array name="imgs">
+        <item>@drawable/icon1</item>
+        <item>@drawable/icon2</item>
+        <item>@drawable/icon3</item>
+        <item>@drawable/icon4</item>
+        <item>@drawable/icon5</item>
+        <item>@drawable/icon6</item>
+        <item>@drawable/icon7</item>
+        <item>@drawable/icon8</item>
+        <item>@drawable/nf</item>
+    </array>
+
+
+
+</resources>
